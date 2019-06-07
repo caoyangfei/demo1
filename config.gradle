@@ -1,0 +1,58 @@
+ext {
+    applicationId = 'com.flyang.demo2'
+
+    app_name = "DEMO2"
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    versionCode = 1
+    versionName = "1.1.1.2019_beta"
+
+
+    isAlone = false
+
+    //本地
+//    apiVersion = "1.1.1.2019_beta_01"
+//    annotationVersion = "1.1.1.2019_beta_03"
+//    complierVersion = "1.1.1.2019_beta_01"
+//    basicVersion = "1.1.1.2019_beta_04"
+//    AspectjPluginVersion = "1.1.1.2019_beta_01"
+//    aopVersion = "1.1.1.2019_beta_02"
+//
+//
+//    dep = [
+//            plugin       : [
+//                    "com.android.tools.build:gradle:3.2.1",
+//            ],
+//            constraint   : "com.android.support.constraint:constraint-layout:1.1.3",
+//
+//            api          : "com.flyang.common:api:$apiVersion",
+//            annotation   : "com.flyang.common:annotation:$annotationVersion@jar",
+//            complier     : "com.flyang.common:annotation:$complierVersion",
+//            basic        : "com.flyang.common:basic:$basicVersion",
+//            AspectjPlugin: "com.flyang.common:AspectjPlugin:$AspectjPluginVersion",
+//            aop          : "com.flyang.common:aop:$aopVersion",
+//
+//            gson         : "com.google.code.gson:gson:2.8.5",
+//    ]
+
+    //github 配置
+    apiVersion = "V1.1.1.2019_release_04"
+    annotationVersion = "V1.1.1.2019_release_04"
+    complierVersion = "V1.1.1.2019_release_04"
+    aopVersion = "V1.1.1.2019_release_04"
+
+    basicVersion = "V1.1.1.2019_release_01"
+    utilVersion = "V1.1.1.2019_release_01"
+
+    dep = [
+            util      : "com.github.caoyangfei.basiclib:util:$utilVersion",
+            basic     : "com.github.caoyangfei.basiclib:basic:$basicVersion",
+
+            aop       : "com.github.caoyangfei.aptlib:aop:$aopVersion",
+            gson      : "com.google.code.gson:gson:2.8.5",
+    ]
+}
+
+//./gradlew clean utilcode-lib:bintrayUpload

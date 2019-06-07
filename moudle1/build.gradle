@@ -1,0 +1,60 @@
+import com.flyang.plugin.aspectj.AspectjPlugin
+import com.flyang.plugin.router.RouterPlugin
+import com.flyang.plugin.inject.InjectPlugin
+
+//控制组件模式和集成模式
+if (rootProject.ext.isAlone) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+apply plugin: AspectjPlugin
+apply plugin: RouterPlugin
+apply plugin: InjectPlugin
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
+        compileOptions {
+
+            sourceCompatibility JavaVersion.VERSION_1_8
+
+            targetCompatibility JavaVersion.VERSION_1_8
+
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(':middleware')
+}
