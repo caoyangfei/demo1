@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.0'
-        classpath 'com.github.caoyangfei.aptlib:plugin:V1.1.1.2019_release_04'
+        classpath 'com.github.caoyangfei.aptlib:plugin:V1.1.1.2019_release_08'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

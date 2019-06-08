@@ -1,6 +1,7 @@
 package com.flyang.moudle1;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import com.flyang.annotation.apt.BindView;
 import com.flyang.annotation.apt.OnClick;
 import com.flyang.annotation.apt.Router;
 import com.flyang.api.bind.FacadeBind;
+import com.flyang.api.router.IntentRouter;
 
 /**
  * @author yangfei.cao
@@ -29,6 +31,12 @@ public class MoudleActivity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_moudle1);
         FacadeBind.bind(this);
+
+
+        Fragment fragment = (Fragment) IntentRouter.build("fragment2").with("test1", 111).getFragment(this);
+        if (fragment != null) {
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment1, fragment).commit();
+        }
     }
 
     @OnClick(value = {"btn1", "btn2"})
