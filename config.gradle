@@ -38,10 +38,10 @@ ext {
 //    ]
 
     //github 配置
-    apiVersion = "V1.1.1.2019_release_10"
-    annotationVersion = "V1.1.1.2019_release_10"
-    complierVersion = "V1.1.1.2019_release_10"
-    aopVersion = "V1.1.1.2019_release_10"
+    apiVersion = "1.1.1.2019_01"
+    annotationVersion = "1.1.1.2019_01"
+    complierVersion = "1.1.1.2019_01"
+    aopVersion = "1.1.1.2019_01"
 
     basicVersion = "V1.1.1.2019_release_01"
     utilVersion = "V1.1.1.2019_release_01"
@@ -50,7 +50,6 @@ ext {
             util      : "com.github.caoyangfei.basiclib:util:$utilVersion",
             basic     : "com.github.caoyangfei.basiclib:basic:$basicVersion",
 
-            aop       : "com.github.caoyangfei.aptlib:aop:$aopVersion",
             gson      : "com.google.code.gson:gson:2.8.5",
     ]
 }
