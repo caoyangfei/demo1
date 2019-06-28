@@ -6,7 +6,7 @@ dependencies {
 
 
     api dep.util
-    api dep.basic
+//    api dep.basic
 
     api 'com.google.auto.service:auto-service:1.0-rc4'
     api 'com.squareup:javapoet:1.11.1'
