@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity {
         return R.layout.activity_main;
     }
 
-    @OnClick(value = {"btn1", "btn2"})
+    @OnClick(value = {"btn1", "btn2", "btn3"})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn1:
@@ -30,6 +30,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn2:
                 IntentRouter.build(Uri.parse("test://filter/module2")).go(this);
+                break;
+            case R.id.btn3:
+                loaderController.showLoader("加载中。。。");
                 break;
         }
     }

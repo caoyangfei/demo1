@@ -14,14 +14,14 @@ ext {
 
 //    本地
     apiVersion = "1.1.1.2019_beta_01"
-    annotationVersion = "1.1.1.2019_beta_01"
+    annotationVersion = "1.1.1.2019_beta_02"
     complierVersion = "1.1.1.2019_beta_01"
     aopVersion = "1.1.1.2019_beta_03"
 
-    basicVersion = "1.1.1.2019_beta_03"
+    basicVersion = "1.1.1.2019_beta_06"
     utilVersion = "1.2.1.2019_beta_04"
 
-    viewVersion = "1.1.1.2019_beta_02"
+    viewVersion = "1.1.1.2019_beta_04"
     dep = [
             plugin    : [
                     "com.android.tools.build:gradle:3.2.1",
