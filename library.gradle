@@ -5,8 +5,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 
+    api dep.basic
     api dep.util
-//    api dep.basic
+    api dep.aop
+    api dep.view
 
     api 'com.google.auto.service:auto-service:1.0-rc4'
     api 'com.squareup:javapoet:1.11.1'
@@ -14,4 +16,5 @@ dependencies {
     api "io.reactivex.rxjava2:rxjava:2.2.4"
     api 'org.aspectj:aspectjrt:1.8.14'
     api 'org.greenrobot:eventbus:3.1.1'
+    api 'org.apache.commons:commons-lang3:3.4'
 }

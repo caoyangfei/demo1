@@ -1,28 +1,25 @@
 package com.flyang.demo1;
 
 import android.net.Uri;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.flyang.annotation.apt.BindView;
 import com.flyang.annotation.apt.OnClick;
-import com.flyang.api.bind.FacadeBind;
 import com.flyang.api.router.IntentRouter;
+import com.flyang.base.activity.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @BindView("btn1")
     Button btn1;
     @BindView("btn2")
     Button btn2;
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        FacadeBind.bind(this);
+    protected int getLayoutID() {
+        return R.layout.activity_main;
     }
 
     @OnClick(value = {"btn1", "btn2"})
