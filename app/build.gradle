@@ -69,6 +69,9 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 
+    // debugImplementation，因为LeakCanary应该只在调试版本中运行。
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+
     if (!rootProject.ext.isAlone) {
         implementation project(':moudle1')
         implementation project(':moudle2')

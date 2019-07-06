@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.flyang.util.log.LogUtils;
 import com.flyang.util.log.config.LogLevel;
+import com.squareup.leakcanary.LeakCanary;
 
 
 /**
@@ -22,6 +23,8 @@ public class App extends Application {
                 .configFormatTag("%d{HH:mm:ss:SSS} %t %c{-5}") // 首行显示信息(可配置日期，线程等等)
                 .configShowBorders(true) // 是否显示边框
                 .configLevel(LogLevel.TYPE_VERBOSE); // 配置可展示日志等级
+
+        LeakCanary.install(this);
 
 //        // 支持输入日志到文件
 //        String filePath = Environment.getExternalStorageDirectory() + "/LogUtils/logs/";

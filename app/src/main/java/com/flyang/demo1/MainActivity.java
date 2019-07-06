@@ -8,6 +8,8 @@ import com.flyang.annotation.apt.BindView;
 import com.flyang.annotation.apt.OnClick;
 import com.flyang.api.router.IntentRouter;
 import com.flyang.base.activity.BaseActivity;
+import com.flyang.base.controller.loader.CircleLoaderController;
+import com.flyang.view.inter.Loader;
 
 public class MainActivity extends BaseActivity {
 
@@ -35,5 +37,12 @@ public class MainActivity extends BaseActivity {
                 loaderController.showLoader("加载中。。。");
                 break;
         }
+    }
+
+    @Override
+    protected Loader getLoaderController() {
+        CircleLoaderController circleLoaderController = new CircleLoaderController(this, rootView);
+        registerController(CircleLoaderController.class.getSimpleName(), circleLoaderController);
+        return circleLoaderController;
     }
 }
