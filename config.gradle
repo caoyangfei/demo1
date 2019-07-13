@@ -13,22 +13,28 @@ ext {
     isAlone = false
 
 //    本地
-    apiVersion = "1.1.1.2019_beta_01"
-    annotationVersion = "1.1.1.2019_beta_02"
-    complierVersion = "1.1.1.2019_beta_01"
-    aopVersion = "1.1.1.2019_beta_03"
+    apiVersion = "2.1.1.2019_beta_02"
+    annotationVersion = "2.1.1.2019_beta_05"
+    complierVersion = "2.1.1.2019_beta_10"
+    aopVersion = "2.1.1.2019_beta_02"
 
-    basicVersion = "1.1.1.2019_beta_09"
-    utilVersion = "1.2.1.2019_beta_04"
+    basicVersion = "2.1.1.2019_beta_17"
+    utilVersion = "2.1.1.2019_beta_01"
 
-    viewVersion = "1.1.1.2019_beta_04"
+    viewVersion = "2.1.1.2019_beta_02"
+
+    imageloaderVersion = "2.1.1.2019_beta_01"
+
+
+
     dep = [
-            basic: "com.flyang.common:basic:$basicVersion",
-            util : "com.flyang.common:util:$utilVersion",
-            aop  : "com.flyang.common:aop:$aopVersion",
-            view : "com.flyang.common:view:$viewVersion",
+            basic      : "com.flyang.common:basic:$basicVersion",
+            util       : "com.flyang.common:util:$utilVersion",
+            aop        : "com.flyang.common:aop:$aopVersion",
+            view       : "com.flyang.common:view:$viewVersion",
+            imageloader: "com.flyang.common:view:$imageloaderVersion",
 
-            gson : "com.google.code.gson:gson:2.8.5",
+            gson       : "com.google.code.gson:gson:2.8.5",
     ]
 
 //    //github 配置

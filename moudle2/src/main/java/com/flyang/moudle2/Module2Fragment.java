@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.flyang.annotation.Presenter;
 import com.flyang.annotation.apt.Router;
 import com.flyang.api.router.IntentRouter;
 
@@ -17,6 +18,10 @@ import com.flyang.api.router.IntentRouter;
  */
 @Router("fragment2")
 public class Module2Fragment extends Fragment {
+
+
+    @Presenter
+    Module2Presenter modulePresenter;
 
     public Module2Fragment() {
         // Required empty public constructor

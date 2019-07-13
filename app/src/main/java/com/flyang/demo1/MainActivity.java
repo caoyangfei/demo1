@@ -7,11 +7,11 @@ import android.widget.Button;
 import com.flyang.annotation.apt.BindView;
 import com.flyang.annotation.apt.OnClick;
 import com.flyang.api.router.IntentRouter;
-import com.flyang.base.activity.BaseActivity;
+import com.flyang.base.activity.BasePresenterActivity;
 import com.flyang.base.controller.loader.CircleLoaderController;
 import com.flyang.view.inter.Loader;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BasePresenterActivity {
 
     @BindView("btn1")
     Button btn1;
@@ -22,6 +22,12 @@ public class MainActivity extends BaseActivity {
     @Override
     protected int getLayoutID() {
         return R.layout.activity_main;
+    }
+
+    @Override
+    protected void onInit() {
+        super.onInit();
+        String moduleName = getString(R.string.moduleName);
     }
 
     @OnClick(value = {"btn1", "btn2", "btn3"})
