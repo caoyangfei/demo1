@@ -11,6 +11,6 @@ import com.flyang.moudle1.model.entity.TestEntity;
  */
 
 @ContractFactory(entites = {TestEntity.class})
-public interface TestNetwork extends Test2Network {
+public interface TestNetwork extends Test2Network, Test3Network {
     void getOffice();
 }

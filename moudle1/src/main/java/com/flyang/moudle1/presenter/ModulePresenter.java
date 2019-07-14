@@ -25,4 +25,9 @@ public class ModulePresenter extends TestNetworkContract.Presenter {
         LogUtils.e("打印测试");
         getView().getOffice2Failed("打印测试");
     }
+
+    @Override
+    public void getOffice3() {
+
+    }
 }

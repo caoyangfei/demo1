@@ -14,6 +14,7 @@ import com.flyang.api.router.IntentRouter;
 import com.flyang.base.fragment.BasePresenterFragment;
 import com.flyang.moudle1.model.contract.TestNetworkContract;
 import com.flyang.moudle1.model.entity.Test2Entity;
+import com.flyang.moudle1.model.entity.Test3Entity;
 import com.flyang.moudle1.model.entity.TestEntity;
 import com.flyang.moudle1.presenter.ModulePresenter;
 import com.flyang.util.log.LogUtils;
@@ -57,6 +58,16 @@ public class Module1Fragment extends BasePresenterFragment implements TestNetwor
         getActivity().finish();
     }
 
+
+    @Override
+    public void getOffice3Success(Test3Entity entity) {
+
+    }
+
+    @Override
+    public void getOffice3Failed(String errorMsg) {
+
+    }
 
     @Override
     public void getOffice2Success(Test2Entity entity) {

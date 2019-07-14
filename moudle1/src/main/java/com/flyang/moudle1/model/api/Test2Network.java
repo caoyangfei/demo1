@@ -10,6 +10,9 @@ import com.flyang.moudle1.model.entity.Test2Entity;
  * ------------- Description -------------
  */
 @ContractFactory(entites = {Test2Entity.class})
-public interface Test2Network {
+public interface Test2Network extends Test3Network{
     void getOffice2();
+
+    @Override
+    void getOffice3();
 }

@@ -19,6 +19,7 @@ import com.flyang.base.activity.BasePresenterActivity;
 import com.flyang.factory.Moudle1InstanceFactory;
 import com.flyang.moudle1.model.contract.TestNetworkContract;
 import com.flyang.moudle1.model.entity.Test2Entity;
+import com.flyang.moudle1.model.entity.Test3Entity;
 import com.flyang.moudle1.model.entity.TestEntity;
 import com.flyang.moudle1.presenter.ModulePresenter;
 import com.flyang.util.log.LogUtils;
@@ -86,6 +87,16 @@ public class MoudleActivity1 extends BasePresenterActivity implements TestNetwor
     @Override
     protected <T> T getInstance(Class clazz) {
         return (T) Moudle1InstanceFactory.create(clazz);
+    }
+
+    @Override
+    public void getOffice3Success(Test3Entity entity) {
+
+    }
+
+    @Override
+    public void getOffice3Failed(String errorMsg) {
+
     }
 
     @Override
