@@ -14,8 +14,8 @@ ext {
 
 //    本地
     apiVersion = "2.1.1.2019_beta_02"
-    annotationVersion = "2.1.1.2019_beta_05"
-    complierVersion = "2.1.1.2019_beta_10"
+    annotationVersion = "2.1.1.2019_beta_06"
+    complierVersion = "2.1.1.2019_beta_12"
     aopVersion = "2.1.1.2019_beta_02"
 
     basicVersion = "2.1.1.2019_beta_17"

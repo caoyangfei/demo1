@@ -15,8 +15,6 @@ import java.util.Calendar;
  * Created by baixiaokang on 16/12/9.
  * 防止View被连续点击,间隔时间600ms
  */
-
-
 @Aspect
 public class SingleClickAspect {
     static int TIME_TAG = 0x01;

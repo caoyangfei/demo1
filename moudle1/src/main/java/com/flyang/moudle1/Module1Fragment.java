@@ -12,11 +12,15 @@ import com.flyang.annotation.apt.OnClick;
 import com.flyang.annotation.apt.Router;
 import com.flyang.api.router.IntentRouter;
 import com.flyang.base.fragment.BasePresenterFragment;
+import com.flyang.moudle1.model.contract.TestNetworkContract;
+import com.flyang.moudle1.model.entity.Test2Entity;
+import com.flyang.moudle1.model.entity.TestEntity;
+import com.flyang.moudle1.presenter.ModulePresenter;
 import com.flyang.util.log.LogUtils;
 
 
 @Router("fragment1")
-public class Module1Fragment extends BasePresenterFragment implements MyView{
+public class Module1Fragment extends BasePresenterFragment implements TestNetworkContract.View{
     // Test param inject, not been used.
     @InjectParam
     int test1 = 123; // test default value
@@ -51,5 +55,26 @@ public class Module1Fragment extends BasePresenterFragment implements MyView{
 //        moduleController.setString();
         IntentRouter.build("moudle2").go(Module1Fragment.this);
         getActivity().finish();
+    }
+
+
+    @Override
+    public void getOffice2Success(Test2Entity entity) {
+
+    }
+
+    @Override
+    public void getOffice2Failed(String errorMsg) {
+
+    }
+
+    @Override
+    public void getOfficeSuccess(TestEntity entity) {
+
+    }
+
+    @Override
+    public void getOfficeFailed(String errorMsg) {
+
     }
 }
