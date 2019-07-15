@@ -1,6 +1,6 @@
 # demo
 
-* [框架结构图](./框架结构.png)
+![框架结构图](https://raw.githubusercontent.com/caoyangfei/demo1/master/pic/%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84.png)
 
 -  //第三方依赖库
 -  logginginterceptor: 'com.squareup.okhttp3:logging-interceptor:3.12.2',
