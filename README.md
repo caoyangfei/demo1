@@ -1,5 +1,7 @@
 # demo
 
+* [框架结构图](./框架结构.png)
+
 -  //第三方依赖库
 -  logginginterceptor: 'com.squareup.okhttp3:logging-interceptor:3.12.2',
 -  okhttp            : 'com.squareup.okhttp3:okhttp:3.12.2',
