@@ -18,8 +18,8 @@ ext {
     complierVersion = "2.1.1.2019_beta_13"
     aopVersion = "2.1.1.2019_beta_02"
 
-    basicVersion = "2.1.1.2019_beta_17"
-    utilVersion = "2.1.1.2019_beta_01"
+    basicVersion = "2.1.1.2019_beta_19"
+    utilVersion = "2.1.1.2019_beta_02"
 
     viewVersion = "2.1.1.2019_beta_02"
 

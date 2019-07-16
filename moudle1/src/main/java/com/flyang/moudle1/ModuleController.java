@@ -28,6 +28,7 @@ public class ModuleController extends BasePresenterController {
     @SuppressLint("CheckResult")
     public void setString() {
         LogUtils.e("这是我的ModuleController");
+        LogUtils.getLog2FileConfig().flushAsync();
         showLoading("这是我的ModuleController");
         Flowable.just(1)
                 .delay(10, TimeUnit.SECONDS)
