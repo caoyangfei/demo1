@@ -9,6 +9,7 @@ import com.flyang.annotation.apt.OnClick;
 import com.flyang.api.router.IntentRouter;
 import com.flyang.base.activity.BasePresenterActivity;
 import com.flyang.base.controller.loader.CircleLoaderController;
+import com.flyang.util.cache.CacheDiskStaticUtils;
 import com.flyang.view.inter.Loader;
 
 public class MainActivity extends BasePresenterActivity {
@@ -28,12 +29,14 @@ public class MainActivity extends BasePresenterActivity {
     protected void onInit() {
         super.onInit();
         String moduleName = getString(R.string.moduleName);
+        CacheDiskStaticUtils.put("test", "123455", 1000);
     }
 
     @OnClick(value = {"btn1", "btn2", "btn3"})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn1:
+                String test = CacheDiskStaticUtils.getString("test");
                 IntentRouter.build("moudle1").go(this);
                 break;
             case R.id.btn2:

@@ -16,6 +16,7 @@ import com.flyang.annotation.apt.Router;
 import com.flyang.aop.modle.bean.DenyBean;
 import com.flyang.api.router.IntentRouter;
 import com.flyang.base.activity.BasePresenterActivity;
+import com.flyang.base.controller.BaseViewController;
 import com.flyang.factory.Moudle1InstanceFactory;
 import com.flyang.moudle1.model.contract.TestNetworkContract;
 import com.flyang.moudle1.model.entity.Test2Entity;
@@ -31,7 +32,7 @@ import com.flyang.util.log.LogUtils;
  * ------------- Description -------------
  */
 @Router("moudle1")
-public class MoudleActivity1 extends BasePresenterActivity implements TestNetworkContract.View {
+public class MoudleActivity1 extends BasePresenterActivity implements TestNetworkContract.View, BaseViewController.ControllerResultCallBackLisenter<TestEntity,String> {
 
     @BindView("btn1")
     Button btn1;
@@ -62,6 +63,7 @@ public class MoudleActivity1 extends BasePresenterActivity implements TestNetwor
     protected void initData() {
         super.initData();
         LogUtils.e("moudle");
+        moduleController.setResultCallBackLisenter(this);
         modulePresenter.getOffice();
     }
 
@@ -117,5 +119,15 @@ public class MoudleActivity1 extends BasePresenterActivity implements TestNetwor
     @Override
     public void getOfficeFailed(String errorMsg) {
 
+    }
+
+    @Override
+    public void resultSuccess(TestEntity testEntity) {
+        LogUtils.e("这是我的ModuleController");
+    }
+
+    @Override
+    public void resultError(String s) {
+        LogUtils.e("这是我的ModuleController");
     }
 }

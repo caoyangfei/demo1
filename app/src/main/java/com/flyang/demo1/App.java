@@ -1,12 +1,9 @@
 package com.flyang.demo1;
 
 import android.app.Application;
-import android.os.Environment;
 
 import com.flyang.util.log.LogUtils;
 import com.flyang.util.log.config.LogLevel;
-import com.flyang.util.log.file.LogFileEngineFactory;
-import com.flyang.util.log.file.LogFileFilter;
 import com.squareup.leakcanary.LeakCanary;
 
 
@@ -29,19 +26,19 @@ public class App extends Application {
 
         LeakCanary.install(this);
 
-        // 支持输入日志到文件
-        String filePath = Environment.getExternalStorageDirectory() + "/LogUtils/logs/";
-        LogUtils.getLog2FileConfig()
-                .configLog2FileEnable(true)  // 是否输出日志到文件
-                .configLogFileEngine(new LogFileEngineFactory(this)) // 日志文件引擎实现
-                .configLog2FilePath(filePath)  // 日志路径
-                .configLog2FileNameFormat("app-%d{yyyyMMdd}.txt") // 日志文件名称
-                .configLog2FileLevel(LogLevel.TYPE_VERBOSE) // 文件日志等级
-                .configLogFileFilter(new LogFileFilter() {  // 文件日志过滤
-                    @Override
-                    public boolean accept(int level, String tag, String logContent) {
-                        return true;
-                    }
-                }).flushAsync();
+//        // 支持输入日志到文件
+//        String filePath = Environment.getExternalStorageDirectory() + "/LogUtils/logs/";
+//        LogUtils.getLog2FileConfig()
+//                .configLog2FileEnable(true)  // 是否输出日志到文件
+//                .configLogFileEngine(new LogFileEngineFactory(this)) // 日志文件引擎实现
+//                .configLog2FilePath(filePath)  // 日志路径
+//                .configLog2FileNameFormat("app-%d{yyyyMMdd}.txt") // 日志文件名称
+//                .configLog2FileLevel(LogLevel.TYPE_VERBOSE) // 文件日志等级
+//                .configLogFileFilter(new LogFileFilter() {  // 文件日志过滤
+//                    @Override
+//                    public boolean accept(int level, String tag, String logContent) {
+//                        return true;
+//                    }
+//                }).flushAsync();
     }
 }
