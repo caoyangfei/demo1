@@ -32,7 +32,7 @@ import com.flyang.util.log.LogUtils;
  * ------------- Description -------------
  */
 @Router("moudle1")
-public class MoudleActivity1 extends BasePresenterActivity implements TestNetworkContract.View, BaseViewController.ControllerResultCallBackLisenter<TestEntity,String> {
+public class MoudleActivity1 extends BasePresenterActivity implements TestNetworkContract.View, BaseViewController.ResultCallBackLisenter<TestEntity,String> {
 
     @BindView("btn1")
     Button btn1;
