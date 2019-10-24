@@ -30,6 +30,7 @@ public class MainActivity extends BasePresenterActivity {
         super.onInit();
         String moduleName = getString(R.string.moduleName);
         CacheDiskStaticUtils.put("test", "123455", 1000);
+//        SmartRefreshLayout
     }
 
     @OnClick(value = {"btn1", "btn2", "btn3"})

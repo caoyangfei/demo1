@@ -21,7 +21,7 @@ import com.flyang.util.log.LogUtils;
 
 
 @Router("fragment1")
-public class Module1Fragment extends BasePresenterFragment implements TestNetworkContract.View{
+public class Module1Fragment extends BasePresenterFragment implements TestNetworkContract.View {
     // Test param inject, not been used.
     @InjectParam
     int test1 = 123; // test default value

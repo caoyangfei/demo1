@@ -3,9 +3,7 @@
 ![框架结构图](https://raw.githubusercontent.com/caoyangfei/demo1/master/pic/%E6%A1%86%E6%9E%B6%E7%BB%93%E6%9E%84.png)
 
 -  //第三方依赖库
--  logginginterceptor: 'com.squareup.okhttp3:logging-interceptor:3.12.2',
 -  okhttp            : 'com.squareup.okhttp3:okhttp:3.12.2',
--  disklrucache      : 'com.jakewharton:disklrucache:2.0.2',
 -  //RXjava
 -  rxjava            : 'io.reactivex.rxjava2:rxjava:2.2.10',
 -  rxandroid         : 'io.reactivex.rxjava2:rxandroid:2.1.1',

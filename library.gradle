@@ -6,24 +6,34 @@ dependencies {
 
 
     api dep.basic
-    api dep.util
+    //basic已使用依赖可以不用添加
+//    api dep.util
+//    api dep.view
+    api dep.expandView
     api dep.aop
-    api dep.view
+
+    api dep.progress
+    api dep.network
     api dep.imageloader
+//    api dep.adapterrxjava
 
-    api 'com.google.auto.service:auto-service:1.0-rc4'
+    //运行时注解必用
+    api 'com.google.auto.service:auto-service:1.0-rc5'
     api 'com.squareup:javapoet:1.11.1'
-    api "io.reactivex.rxjava2:rxandroid:2.1.1"
-    api "io.reactivex.rxjava2:rxjava:2.2.10"
+    //切片必用
     api 'org.aspectj:aspectjrt:1.8.14'
-    api 'org.greenrobot:eventbus:3.1.1'
-    api 'org.apache.commons:commons-lang3:3.4'
 
-    //imageloader  图片加载库需要依赖
-    api 'jp.co.cyberagent.android:gpuimage:2.0.3'
-    api 'jp.wasabeef:glide-transformations:4.0.0'
-    api 'com.github.bumptech.glide:glide:4.9.0'
-    api 'com.github.bumptech.glide:annotations:4.9.0'
-    api 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //basic已使用，可以不用添加
+//    api "io.reactivex.rxjava2:rxandroid:2.1.1"
+//    api "io.reactivex.rxjava2:rxjava:2.2.10"
+    api 'org.apache.commons:commons-lang3:3.5'
+    api 'org.greenrobot:eventbus:3.1.1'
+
+//    //imageloader  图片加载库需要依赖
+//    api 'jp.co.cyberagent.android:gpuimage:2.0.3'
+//    api 'jp.wasabeef:glide-transformations:4.0.0'
+//    api 'com.github.bumptech.glide:glide:4.9.0'
+//    api 'com.github.bumptech.glide:annotations:4.9.0'
+//    api 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 }
