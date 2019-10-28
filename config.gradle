@@ -56,15 +56,14 @@ ext {
     apiVersion = "1.1.1.2019_04"
     annotationVersion = "1.1.1.2019_04"
     complierVersion = "1.1.1.2019_04"
+    aopVersion = "1.1.1.2019_04"
 
     utilVersion = "1.1.1.2019_02"
-
+    //UI
     viewVersion = "1.1.1.2019_07"
     //控件拓展库
     expandViewVersion = "1.1.1.2019_05"
-
-    aopVersion = "1.1.1.2019_03"
-
+    //网络
     progressVersion = "1.1.1.2019_02"
     networkVersion = "1.1.1.2019_02"
     imageloaderVersion = "1.1.1.2019_02"
@@ -78,9 +77,9 @@ ext {
             //帮助类
             util       : "com.github.caoyangfei:utillib:$utilVersion",
             //组件化,切片
-            api        : "com.github.caoyangfei.aptlib:api:$apiVersion",
-            annotation : "com.github.caoyangfei.aptlib:annotation:$annotationVersion",
-            complier   : "com.github.caoyangfei.aptlib:complier:${complierVersion}@jar",
+//            api        : "com.github.caoyangfei.aptlib:api:$apiVersion",
+//            annotation : "com.github.caoyangfei.aptlib:annotation:$annotationVersion",
+//            complier   : "com.github.caoyangfei.aptlib:complier:${complierVersion}@jar",
             aop        : "com.github.caoyangfei.aptlib:aop:$aopVersion",
             //网络请求
             progress   : "com.github.caoyangfei.netlib:progress:$progressVersion",
