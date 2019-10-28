@@ -87,7 +87,6 @@ ext {
             network    : "com.github.caoyangfei.netlib:network:$networkVersion",
             imageloader: "com.github.caoyangfei.netlib:imageloader:$imageloaderVersion",
             basic      : "com.github.caoyangfei:basiclib:$basicVersion"
-
     ]
 }
 
