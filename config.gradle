@@ -48,7 +48,6 @@ ext {
 //            progress     : "com.flyang.common:progress:$progressVersion",
 //            network      : "com.flyang.common:network:$networkVersion",
 //            imageloader  : "com.flyang.common:imageloader:$imageloaderVersion",
-////            adapterrxjava: 'com.squareup.retrofit2:adapter-rxjava2:2.5.0',
 //
 //            basic        : "com.flyang.common:basic:$basicVersion",
 //    ]
@@ -70,24 +69,24 @@ ext {
     networkVersion = "1.1.1.2019_02"
     imageloaderVersion = "1.1.1.2019_02"
     //basic
-    basicVersion = "1.1.2.2019_beta_01"
+    basicVersion = "1.1.2.2019_01"
     dep = [
             gson       : "com.google.code.gson:gson:2.8.5",
             //ui
-//            view       : "com.github.caoyangfei.viewlib:view:$viewVersion",
+            view       : "com.github.caoyangfei.viewlib:view:$viewVersion",
             expandView : "com.github.caoyangfei.viewlib:expandview:$expandViewVersion",
             //帮助类
-//            util       : "com.github.caoyangfei:utillib:$utilVersion",
+            util       : "com.github.caoyangfei:utillib:$utilVersion",
             //组件化,切片
-//            api        : "com.github.caoyangfei.aptlib:api:$apiVersion",
-//            annotation : "com.github.caoyangfei.aptlib:annotation:$annotationVersion",
-//            complier   : "com.github.caoyangfei.aptlib:complier:${complierVersion}@jar",
+            api        : "com.github.caoyangfei.aptlib:api:$apiVersion",
+            annotation : "com.github.caoyangfei.aptlib:annotation:$annotationVersion",
+            complier   : "com.github.caoyangfei.aptlib:complier:${complierVersion}@jar",
             aop        : "com.github.caoyangfei.aptlib:aop:$aopVersion",
             //网络请求
             progress   : "com.github.caoyangfei.netlib:progress:$progressVersion",
             network    : "com.github.caoyangfei.netlib:network:$networkVersion",
             imageloader: "com.github.caoyangfei.netlib:imageloader:$imageloaderVersion",
-            basic      : "com.github.caoyangfei.basiclib:basic:$basicVersion"
+            basic      : "com.github.caoyangfei:basiclib:$basicVersion"
     ]
 }
 

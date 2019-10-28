@@ -5,7 +5,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 
-   api dep.basic
+    api dep.basic
     api dep.util
     api dep.view
     api dep.expandView
