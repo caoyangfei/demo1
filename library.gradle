@@ -5,17 +5,15 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 
-    api dep.basic
-    //basic已使用依赖可以不用添加
-//    api dep.util
-//    api dep.view
+   api dep.basic
+    api dep.util
+    api dep.view
     api dep.expandView
     api dep.aop
 
     api dep.progress
     api dep.network
     api dep.imageloader
-//    api dep.adapterrxjava
 
     //运行时注解必用
     api 'com.google.auto.service:auto-service:1.0-rc5'
@@ -23,17 +21,28 @@ dependencies {
     //切片必用
     api 'org.aspectj:aspectjrt:1.8.14'
 
-    //basic已使用，可以不用添加
-//    api "io.reactivex.rxjava2:rxandroid:2.1.1"
-//    api "io.reactivex.rxjava2:rxjava:2.2.10"
+    //imageloader  图片加载库需要依赖
+    api 'jp.co.cyberagent.android:gpuimage:2.0.3'
+    api 'jp.wasabeef:glide-transformations:4.0.0'
+    api 'com.github.bumptech.glide:glide:4.9.0'
+    api 'com.github.bumptech.glide:annotations:4.9.0'
+    api 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //网络请求
+    api 'com.squareup.okhttp3:okhttp:3.12.2'
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    //可不添加,已用gson处理过结果
+    api 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    //rxjava
+    api "io.reactivex.rxjava2:rxandroid:2.1.1"
+    api "io.reactivex.rxjava2:rxjava:2.2.10"
     api 'org.apache.commons:commons-lang3:3.5'
     api 'org.greenrobot:eventbus:3.1.1'
 
-//    //imageloader  图片加载库需要依赖
-//    api 'jp.co.cyberagent.android:gpuimage:2.0.3'
-//    api 'jp.wasabeef:glide-transformations:4.0.0'
-//    api 'com.github.bumptech.glide:glide:4.9.0'
-//    api 'com.github.bumptech.glide:annotations:4.9.0'
-//    api 'com.github.bumptech.glide:okhttp3-integration:4.9.0'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    api 'com.google.code.gson:gson:2.8.5'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+
 }
